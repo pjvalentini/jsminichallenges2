@@ -1,10 +1,8 @@
-//Created the "You are right!" text above button...
-//
-  function showDiv1() {
-    document.getElementById("rightDiv").style.display = "block";
+//x
+function myFunction1(name) {
+  document.getElementById("noagree").innerHTML = name + ".";
 }
 
-//Created the "You are right!" text above button...
-  function showDiv2() {
-    document.getElementById("wrongDiv").style.display = "block";
+ function myFunction2(name) {
+   document.getElementById("noagree").innerHTML = name + ".";
 }
