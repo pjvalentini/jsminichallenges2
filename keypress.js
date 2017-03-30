@@ -1,5 +1,5 @@
 
-// document.onkeypress=function(e){
-//  var e=window.event || e
-//  alert("You pressed!: "+String.fromCharCode(e.charCode))
-// }
+document.keypress=function(e){
+ var e=window.event || e
+ document.write("You pressed!: "+String.fromCharCode(e.charCode))
+}
