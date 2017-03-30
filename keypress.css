@@ -3,9 +3,8 @@ body {
   height: 300px;
 }
 
-.keypressed {
+#printchatbox {
   font-family: "Helvetica", sans-serif;
   color: #fff;
   font-size: 30px;
-  text-align: center;
 }
