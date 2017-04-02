@@ -1,46 +1,16 @@
-// Given a string, return if the string contains any numbers or not
-// function hasNumbers() {
-//   return !!str.match(/\d+/);
-//
-// var usernameElement = document.getElementById("Username")
-// var value = ducument.getElementById("value")
-
-//Password//
-
-// var passwordElement = document.getElementById("password");
-// console.dir(passwordElement);
-// var form = document.getElementById("form");
-// console.dir(form);
-//
-// form.addEventListener("submit", function(event) {
-// 	console.log(event);
-// 	var correctPassword = passwordElement.value;
-// 	if (correctPassword === "12345678") {
-// 		alert("Password is Correct!");
-// 	}
-// 	else {
-// 		alert("Password is Wrong!");
-//  	}
-// });
-//
-//Username//
-
-var usernameElement = document.getElementById("name");
-console.dir(name);
+//Password and Username accepted features in JS.
 
 var form = document.getElementById("form");
-console.log(form);
-
 form.addEventListener("submit", function(event) {
-  console.log(event);
-  var correctUsername = usernameElement.value;
-  if (correctUsername === "!!str.match(/\d+/)") {
-  alert("Username is valid!");
-} else {
-  alert("Password is invalid!");
-  }
+	event.preventDefault();
+	var input = document.getElementById("name");
+	var username = document.getElementById("name").value;
+		var password = document.getElementById("password").value;
+	var numbers = /[0-9]+/;
+		if(password === "12345678" && username.match(numbers)) {
+			alert("Information Accepted!");
+			input.innerHtml = "Stay on Page";
+	} else  {
+		alert("Invalid Password or Username or Both");
+	}
 });
-
-// function hasNumbers(name) {
-//   return !!str.match(/\d+/);
-// }
